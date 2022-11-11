@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter - 6</title>
+</head>
+<body>
+    <a href="/Subjects/DLD HTML Notes/DLD.html">Go Back</a>
+
+    <h1>Chapter 6: Boolean Algebra</h1>
+
+    <h2>What is Boolean Algebra?</h2>
+    <p>A Boolean algebra is the mathematics of logic. George Boole, in 1806 developed this algebra. Boolean algebra is a set of rules, laws and theorems by which Boolean functions or logic functions can be expressed mathematically. It is a convenient tool for expressing and analyzing the behavior of Boolean functions and logic operations</p>
+    <p>The logic operations of Boolean Algebra are:</p>
+    <ol>
+        <li>AND</li>
+        <li>OR</li>
+        <li>NOT</li>
+    </ol>
+
+    <h2>AND Operation</h2>
+    <p>The AND operations performs logical multiplication. This operation is denoted by (.) between binary variables. The rules of AND operation are:</p>
+    <ul>
+        <li>0 . 0 = 0</li>
+        <li>0 . 1 = 0</li>
+        <li>1 . 0 = 0</li>
+        <li>1 . 1 = 1</li>
+    </ul>
+
+    <h2>OR Operation</h2>
+    <p>The ‘OR’ operation performs logical addition. This operation is denoted by <strong>(+)</strong> operator between binary variables. The rules of OR operation are:</p>
+    <ul>
+        <li>0 + 0 = 0</li>
+        <li>0 + 1 = 1</li>
+        <li>1 + 0 = 1</li>
+        <li>1 + 1 = 1</li>
+    </ul>
+
+    <h2>NOT Operation</h2>
+    <p>The ‘NOT’ operation performs complement operation. This operation is denoted by bar <strong>(  ͞  )</strong> over the binary variables. The rules of NOT operation are:</p>
+    <ul>
+        <li>0' = 1</li>
+        <li>1' = 0</li>
+    </ul>
+
+    <h2>Boolean Function</h2>
+    <p>A Boolean function is a function that can be represented by binary variables. Two operators (AND and OR) 1 binary (NOT =, AND =) for example: F(A, B) = A' B + AB. At any value of its binary varibales a Boolean function always has two outputs either ‘0’ or ‘1’.</p>
+    <p>For the given example, the Boolean function gives an output ‘1’ when A=0 and B=1 or when A=1 and B=0. When A=0 and B=0 then this Boolean function gives an output ‘0’</p>
+    <p>A Boolean function or logic function can be systematically expressed or describes in terms of truth table.</p>
+
+    <h2>Truth Table</h2>
+    <p>A truth tables is a table that describes the behavior of Boolean function or logic function in order to describe any Boolean function or logic function in terms of we need 2n binary input combinations from binary 0 to binary 2n-1, where ‘n’ is the member of input variables. A truth tables shows all possibilities of their inputs with corresponding output</p>
+
+    <h2>Practice Questions</h2>
+    <p><strong>Q. A Boolean function has 3 inputs and 1 output. The output of this Boolean function is 1 whenever the inputs has more 1’s than 0’s otherwise the output of this Boolean function will be zero. Provide truth table.</strong></p>
+
+    <p><strong>Q. a Boolean function has 3 inputs and 1 output. The output of this function may be zero when the inputs have 2 adjacent 1’s otherwise the output this Boolean function will be one provide truth table</strong></p>
+
+    <p><strong>Q. A Boolean function has 3 inputs and 1 output the output of the circuit will be one ‘1’ whenever their input have odd number of zero. Otherwise the output of the circuit will be zero ‘0’</strong></p>
+
+    <p><strong>Q. A Boolean circuit has 3 inputs A, B, C and 3 outputs. X, Y, Z when the input is binary 0, 1, 2, 3 then output is greater than the input. When the input is 4, 5, 6 or 7 then binary output is 1 less than input. Provide the truth table</strong></p>
+
+    <h2>Rules of Boolean Algebra</h2>
+    <h3>Identity/Redundancy Law</h3>
+        <li>A + 1 = 1</li>
+        <li>A + 0 = A</li>
+        <li>A + A = A</li>
+        <li>A + A' = 1</li>
+    
+    
+        <li>A + B = B + A</li>
+
+    
+        <li></li>
+    <ol>
+        <li>A . A = A</li>
+        <li>A . 0 = 0</li>
+        <li>A . 1 = A</li>
+        <li>A . A' = 0</li>
+        <li>A'' = A</li>
+        <li>A + AB = A</li>
+        <li>A + A'B = A + B</li>
+    </ol>
+
+    <p>Prove that:</p>
+    <ol>
+        <li>A + AB = A</li>
+        <p>A + AB = A <br>A + (1 + B) <br>using </p>
+        <li>A + A'B = A + B</li>
+    </ol>
+    <h2>Laws of Boolean Algebra</h2>
+        <h3>Commutative Law</h3>
+        <p>The commutative law of Boolean algebra for two variable in ‘OR’ operation is defined as A + B = B + A. this law states that order in which variables 0 Red. Difference similarlB the commutative law of Boolean algebra in AND operation is defined as A . B = B. A. This law states that the order in which variables prove:</p>
+        <ol>
+            <li>A + B = B + A</li>
+            <li>A . B = B . A</li>
+        </ol>
+        <table border="1px">
+            <tr>
+                <th>A</th>
+                <th>B</th>
+                <th>A + B</th>
+                <th>B + A</th>
+                <th>A . B</th>
+                <th>B . A</th>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <th>1</th>
+                <th>1</th>
+                <th>1</th>
+                <th>1</th>
+                <th>1</th>
+                <th>1</th>
+            </tr>
+        </table>
+
+        <p>From the above table it can seen that LHS = RHS for eq (i) as well as for equation (ii)</p>
+
+        <h3>Associative Law</h3>
+        <p>The associative law of Boolean algebra for these variables in OR operation is defined as A + (B + C) = (A + B) + C or this law states that the order in which variables are grouped make no difference when performing in OR operation. Then similarly “The associative law of Boolean algebra for these variable in AND operation is defined as A . (B . C) = (A . B) . C
+            This law states that the order of variables – that are grouped together – makes no different when performing AND operation</p>
+
+            <ol><strong><li>A + (B + C) = (A + B) + C</li></strong>
+            <table border="1px">
+                <tr>
+                    <th>A</th>
+                    <th>B</th>
+                    <th>C</th>
+                    <th>B + C</th>
+                    <th>A + (B + C)</th>
+                    <th>(A + B)</th>
+                    <th>(A + B) + C</th>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+            </table>
+            <p>As from the above table LHS = RHS proved</p>
+            <strong><li>A . (B . C) = (A . B) . C</li></strong>
+            <table border="1px">
+                <tr>
+                    <th>A</th>
+                    <th>B</th>
+                    <th>C</th>
+                    <th>B . C</th>
+                    <th>A . (B . C)</th>
+                    <th>(A . B)</th>
+                    <th>(A . B) . C</th>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+            </table>
+            </ol>
+            <p>In the above table LHS = RHS</p>
+        <h3>Distributive Law</h3>
+        <p>The distributive law of Boolean algebra for three variables are defined as A . (B + C) = (A . B) + (A . C) first law and A + B . C = (A + B) . (A + C) second law.</p>
+        <p>This law states that ANDing with a single variable is equivalent to ANDing that variable with several variable and ORing the products</p>
+
+        <ol><li><strong>A . (B + C) = (A . B) + (A . C)</strong></li>
+        <table border="1px">
+            <tr>
+                <th>A</th>
+                <th>B</th>
+                <th>C</th>
+                <th>B + C</th>
+                <th>A . (B + C)</th>
+                <th>(A . B)</th>
+                <th>(A . C)</th>
+                <th>(A . B) + (A . C)</th>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+        </table>
+        <p>LHS = RHS</p>
+
+        <li><strong>(A + B) . (A + C) = A + (B . C)</strong></li>
+        <table border="1px">
+            <tr>
+                <th>A</th>
+                <th>B</th>
+                <th>C</th>
+                <th>A + B</th>
+                <th>A + C</th>
+                <th>(A + B) . (A + C)</th>
+                <th>B . C</th>
+                <th>(A + B) . C</th>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td></td>
+                <td>1</td>
+            </tr>
+        </table>
+        <p>LHS = RHS</p></ol>
+</body>
+</html>

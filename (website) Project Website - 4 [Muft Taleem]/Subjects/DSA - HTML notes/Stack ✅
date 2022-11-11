@@ -1,0 +1,100 @@
+Refrence: <a href="https://www.programiz.com/dsa/stack">Stack Data Structure - Programiz</a> 
+* Stack
+a stack is a linear data structure that uses the LIFO (last in first out) principle. Which means whatever data was input last is going to be the first one to be removed.
+
+- Example: think of a pile of plates, stored one on top of another. This is called a "Stack" of plates. The plate that was put on top is going to be the first one to get removed. To get the plate at the bootom, you need to remove ALL of the plates stored on top of it. 
+    - LIFO Principle of Stack
+    In programming terms, putting an item on top of the stack is called push and removing an item is called pop.
+
+    - Basic Operations of Stack
+    There are some basic operations that allow us to perform different actions on a stack.
+
+    1. Push: Add an element to the top of a stack
+    2. Pop: Remove an element from the top of a stack
+    3. IsEmpty: Check if the stack is empty
+    4. IsFull: Check if the stack is full
+    5. Peek: Get the value of the top element without removing 
+    
+    - Working of Stack Data Structure
+    The operations work as follows:
+
+    1. A pointer called TOP is used to keep track of the top element in the stack.
+    2. When initializing the stack, we set its value to -1 so that we can check if the stack is empty by comparing TOP == -1.
+    3. On pushing an element, we increase the value of TOP and place the new element in the position pointed to by TOP.
+    4. On popping an element, we return the element pointed to by TOP and reduce its value.
+    5. Before pushing, we check if the stack is already full
+    6. Before popping, we check if the stack is already empty
+
+        - Working of Stack in Java:
+        <pre>
+        // Stack implementation in Java
+
+        class Stack {
+        private int arr[];
+        private int top;
+        private int capacity;
+
+        // Creating a stack
+        Stack(int size) {
+            arr = new int[size];
+            capacity = size;
+            top = -1;
+        }
+
+        // Add elements into stack
+        public void push(int x) {
+            if (isFull()) {
+            System.out.println("OverFlow\nProgram Terminated\n");
+            System.exit(1);
+            }
+
+            System.out.println("Inserting " + x);
+            arr[++top] = x;
+        }
+
+        // Remove element from stack
+        public int pop() {
+            if (isEmpty()) {
+            System.out.println("STACK EMPTY");
+            System.exit(1);
+            }
+            return arr[top--];
+        }
+
+        // Utility function to return the size of the stack
+        public int size() {
+            return top + 1;
+        }
+
+        // Check if the stack is empty
+        public Boolean isEmpty() {
+            return top == -1;
+        }
+
+        // Check if the stack is full
+        public Boolean isFull() {
+            return top == capacity - 1;
+        }
+
+        public void printStack() {
+            for (int i = 0; i <= top; i++) {
+            System.out.println(arr[i]);
+            }
+        }
+
+        public static void main(String[] args) {
+            Stack stack = new Stack(5);
+
+            stack.push(1);
+            stack.push(2);
+            stack.push(3);
+            stack.push(4);
+
+            stack.pop();
+            System.out.println("\nAfter popping out");
+
+            stack.printStack();
+
+            }
+        }
+        </pre>
