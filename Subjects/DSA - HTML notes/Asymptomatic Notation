@@ -1,0 +1,82 @@
+-How do we measure Efficiency of an Algorithm?
+Ans: The efficiency of an algorithm depends on the resources (Time, Memory) required for the algorithm to execute it. This efficiency is measured with the help of asymptotic notations. The performance of an Algorithm varies as the inputs change. As the size of the input incrases the perforamce starts to change.
+
+- What is asymptotic analysis?
+Ans: The study of change in performance of the algorithm with the change in the order of the input size is defined as asymptotic analysis.
+
+- Types of asymptotic notations:
+Ans: Mainly (3) types of asymptotic notations:
+1. Big-O
+2. Omega
+3. Theta
+
+* Big O (O-notation)
+Big-O notation represents the upper bound of the running time of an algorithm. Thus, it gives the worst-case complexity of an algorithm. 
+
+Since it gives the worst-case running time of an algorithm, it is widely used to analyze an algorithm as we are always interested in the worst-case scenario.
+
+* Omega Notation (Ω-notation)
+Omega notation represents the lower bound of the running time of an algorithm. Thus, it provides the best case complexity of an algorithm.
+
+* Theta Notation (Θ-notation)
+Theta notation encloses the function from above and below. Since it represents the upper and the lower bound of the running time of an algorithm, it is used for analyzing the average-case complexity of an algorithm.
+
+* Master Theorem
+The master theorem is used in calculating the time complexity of recurrence relations (divide and conquer algorithms) in a simple and quick way.
+The master method is a formula for solving recurrence relations of the form:
+<pre>
+T(n) = aT(n/b) + f(n),
+where,
+n = size of input
+a = number of subproblems in the recursion
+n/b = size of each subproblem. All subproblems are assumed 
+     to have the same size.
+f(n) = cost of the work done outside the recursive call, 
+      which includes the cost of dividing the problem and
+      cost of merging the solutions
+
+Here, a ≥ 1 and b > 1 are constants, and f(n) is an asymptotically positive function.
+</pre>
+
+Master Theorem
+If a ≥ 1 and b > 1 are constants and f(n) is an asymptotically positive function, then the time complexity of a recursive relation is given by
+<pre>
+T(n) = aT(n/b) + f(n)
+
+where, T(n) has the following asymptotic bounds:
+
+    1. If f(n) = O(nlogb a-ϵ), then T(n) = Θ(nlogb a).
+
+    2. If f(n) = Θ(nlogb a), then T(n) = Θ(nlogb a * log n).
+
+    3. If f(n) = Ω(nlogb a+ϵ), then T(n) = Θ(f(n)).
+
+ϵ > 0 is a constant.
+</pre>
+
+Each of the above conditions can be interpreted as:
+
+<li>If the cost of solving the sub-problems at each level increases by a certain factor, the value of <var>f(n)</var> will become polynomially smaller than <var>nlogb a</var>. Thus, the time complexity is oppressed by the cost of the last level ie. <var>nlogb a</var>
+If the cost of solving the sub-problem at each level is nearly equal, then the value of <var>f(n)</var> will be <var>nlogb a</var>. Thus, the time complexity will be <var>f(n)</var> times the total number of levels ie. <var>nlogb a * log n</var>
+If the cost of solving the subproblems at each level decreases by a certain factor, the value of <var>f(n)</var> will become polynomially larger than nlogb a. Thus, the time complexity is oppressed by the cost of f(n).
+
+- Solved Example of Master Theorem
+<pre>
+T(n) = 3T(n/2) + n2
+Here,
+a = 3
+n/b = n/2
+f(n) = n2
+
+logb a = log2 3 ≈ 1.58 < 2
+
+ie. f(n) < nlogb a+ϵ , where, ϵ is a constant.
+
+Case 3 implies here.
+
+Thus, T(n) = f(n) = Θ(n2) 
+</pre>
+
+* Divide & Conquer Algorithm
+
+Divide and conquer algorithm work by breaking a bigger problem into smaller ones. Once you have obtained the sub-problem and it simplified enough to be solved easily, solve it. And keep repeating this process until you have you have solved the samller sub problem. Now combine the result of these sub-problems.
