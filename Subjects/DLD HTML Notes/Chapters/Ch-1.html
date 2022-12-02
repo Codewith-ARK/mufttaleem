@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="../DLDStyle.css">
+
     <style>
         *{
             font-family: 'Bahnschrift', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -23,44 +25,12 @@
             background-color: blue;
             box-shadow: 2px 2px 10px black;
         } */
-        
-        /* page heading */
-        .chap-heading{
-            margin: 0px;
-            position: relative;
-            top: 50%;
-            padding: 50px;
-            background-image: linear-gradient(to right, rgb(30, 255, 0), rgb(13, 0, 128));
-            text-align: center;
-            color: #ffffff;
-        }
-
-        /* Back-Navigation Buton */
-        .chap-heading a{
-            /* Positioning of the Button */
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            
-            /* Formatting of the Button */
-            padding: 5px;
-            border-radius: 0px;
-            border: none;
-            color: #ffff;
-        }
-        .chap-heading a:hover{
-            color: white;
-            border: 2px solid #ffff;
-            /* background-color: blue; */
-            box-shadow: 2px 2px -1px -1px 10px #ffff;
-            border-radius: 15px;
-        }
     </style>
     <title>Chapter - 1</title>
 </head>
 <body>
     <div class="chap-heading">
-        <a href="/Subjects/DLD HTML Notes/DLD.html">&#8592 Go Back</a>
+        <a value="Go back!" onclick="history.back()">&#8592 Go Back</a>
         <h1>Chapter - 1: Number Systems</h1>
     </div>
     <h3>Number Systems:</h3>
