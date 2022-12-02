@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        html {
+        scroll-behavior: smooth;
+        }
+        /* body{
+            background-color: #121212;
+        }
+        h1,h2,h3,p,ol,table{
+            color: white;
+        } */
+        div {
+            display: block;
+        }
+        img{
+            height: 100px;
+            width: 100px;
+        }
+        a{
+            margin: 10px;
+        }
+        a:hover{
+            color: red;
+        }
+        .img-container{
+            padding: 8px 20px;
+            margin: 24px -20px;
+            box-shadow: none!important;
+            background-color: #E7E9EB;
+            border-radius: 5px;
+        }
+        /* CSS for Variables */
+var {
+    border: 1px solid #d3dce6;
+    padding: 0 4px;
+    border-radius: 4px;
+    font-style: normal;
+    font-family: "Droid Sans Mono","Inconsolata","Menlo","Consolas","Bitstream Vera Sans Mono","Courier",monospace;
+    display: inline-block;
+    line-height: 24px;
+    font-size: large;
+    line-height: 20px;
+    margin: 0 2px;
+}
+/* Changes the Color of highlighted h1 */
+::selection {
+    background: rgb(134, 28, 247);
+    color: cyan;
+}
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSA</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="/Pages/cs.html"></a>
+    <div id="Header">
+        <h1>Table of Contents</h1>
+        <ol>
+            <a href="#ds-intro"><li>Introduction to DS</li></a>
+            <ul tpye="circle">
+               <a href="#ds"><li>Data Structure</li></a> 
+               <a href="#ds-types"><li>Types of Data Structures</li></a>
+               <a href="#linear-ds"><li>Linear Data Structures</li></a>
+                <ul>
+                    <a href="#array-ds"><li>Arrays</li></a>
+                    <a href="#stack-ds"><li>Stack</li></a>
+                    <a href="#queue-ds"><li>Queue</li></a>
+                    <a href="#linked-list-ds"><li>Linked Lists</li></a>
+                </ul>
+               <a href="#non-linear-ds"><li>Non-Linear Data Structures</li></a>
+                <ul>
+                    <a href="#graph-ds"><li>Graph Based data structure</li></a>
+                    <a href="#tree-ds"><li>Tree-Based data structures</li></a>
+                </ul>
+               <a href="#why-ds"><li>Why Data Structures?</li></a>
+            </ul>
+        </ol>
+        <h1>Refrences: </h1>
+        <ol>
+            <a href="https://www.programiz.com/dsa/data-structure-types"><li>Introduction to DSA - Programiz</li></a>
+        </ol>
+    </div>
+    <div id="ds-intro">
+        <div id="ds">
+            <h1>Data Structure</h1>
+            <p>Data Structure is used to store data and organize data. It is a way of arrangaing data in a computer memory so that it can be accessed and updated efficiently. Depending on your requirement and project, it is important to choose the right data structure for your project.</p>
+        </div>
+        <div id="ds-types">
+            <h1>Types of Data Structures</h1>
+            <ol>
+                <li>Linear Data Strucutre</li>
+                <li>Non-Linear Data Structure</li>
+            </ol>
+        </div>
+        <hr>
+        <div id="linear-ds">
+            <h1>Linear Data Strucutre</h1>
+            <p>In linear data structures, the elements are arranged in sequence one after the other. Since elements are arranged in particular order, they are easy to implement.</p>
+            <p>However, when the complexity of the program increases, the linear data structures might not be the best choice because of operational complexities.</p>
+            <p>Examples:</p>
+            <ol>
+                <li id="array-ds"><h2>Array</h2></li>
+                    <div class="img-container"><img src="img/array_.png" alt="diagram of array"></div>
+                    <p>An array is a collection of similar types of data. For example, if we want to store the names of 100 people then we can create an array of the string type that can store 100 names.</p>
+                    <p>Memory Allocation in Array: </p><p>In an array, elements in memory are arranged in continuous memory. All the elements of an array are of the same type. And, the type of elements that can be stored in the form of arrays is determined by the programming language.</p>
+                    <a href="#">Arrays in Java</a>
+                <li id="stack-ds"><h2>Stack</h2></li>
+                    <div class="img-container"><img src="img/stack_dsa.png" alt="diagram of stack"></div>
+                    <p>In stack data structure, elements are stored in the LIFO <emp>(Last in, First out)</emp> principle. That is, the last element stored in a stack will be removed first. It works just like a pile of plates where the last plate kept on the pile will be removed first.</p>
+                <li id="queue-ds"><h2>Queue</h2></li>
+                    <div class="img-container"><img src="img/queue_dsa.png" alt="diagram of queue"></div>
+                    <p>Unlike stack, the queue data structure works in the FIFO <emp>(First in, First out)</emp> principle where first element stored in the queue will be removed first. It works just like a queue of people in the ticket counter where first person on the queue will get the ticket first.</p>
+                <li id="linked-list-ds"><h2>Linked Lists</h2></li>
+                    <div class="img-container"><img src="img/linked-list.png" alt="diagram of linked lists"></div>
+                    <p>In linked list data structure, data elements are connected through a series of nodes. And, each node contains the data items and address to the next node.</p>
+            </ol>
+            <hr>
+        </div>
+        <div id="non-linear-ds">
+            <h1>Non-Linear Data Structure</h1>
+            <p>Unlike linear data structures, elements in non-linear data structures are not in any sequence. Instead they are arranged in a hierarchical manner where one element will be connected to one or more elements. Non-linear data structures are further divided into (2) data structures. </p>
+            <ol>
+                <li>Graph Based Data Structures</li>
+                <li>Tree Based Data Structures</li>
+                
+            </ol>
+                <h2 id="graph-ds">Graph Based Data Structures</h2>
+                <img src="img/graph_dsa.png" alt="Diagram of graph based data structure">
+                <p>In graph data structure, each node is called vertex and each vertex is connected to other vertices through edges.</p>
+                <p class="example">
+                    Examples:
+                    <ol>
+                        <li>Spanning Tree and Minimum Spanning Tree</li>
+                        <li>Strongly Connected Components</li>
+                        <li>Adjacency Matrix</li>
+                        <li>Adjacency List</li>
+                    </ol>
+                </p>
+    
+                <h2 id="tree-ds">Tree Based Data Structures</h2>
+                <img src="img/tree_dsa.png" alt="diagram of tree based data structure">
+                <p>Similar to a graph, a tree is also a collection of vertices and edges. However, in tree data structure, there can only be one edge between two vertices.</p>
+                <p class="example">
+                    Example:
+                    <ol>
+                        <li>Binary Tree</li>
+                        <li>Binary Search Tree</li>
+                        <li>AVL tree</li>
+                        <li>B-tree</li>
+                        <li>B+ Tree</li>
+                        <li>Red-Black Tree</li>
+                    </ol>
+                </p>
+        </div>
+        <hr>
+        <div id="why-ds">
+            <h1>Why Data Structure?</h1>
+            <p>Knowledge about data structures help you understand the working of each data structure. And, based on that you can select the right data structures for your project. This helps you write memory and time efficient code.</p>
+            <p>Programming is all about data structures and algorithms. Data structures are used to hold data while algorithms are used to solve the problem using that data.</p>
+        </div>
+        <div id="diffOf-ds">
+            <table style: border="3 px solid">
+                <tr>
+                    <th>S#</th>
+                    <th>Linear DS</th>
+                    <th>Non-Linear DS</th>
+                </tr>
+                <tr>
+                    <td>1.</td>
+                    <td>The data items are arranged in sequential order, one after the other</td>
+                    <td>The data items are arranged in non-sequential order (Hierarchial manner)</td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>All the items are present on the single layer</td>
+                    <td>The data items are present at different layers</td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td>It can be traversed on a single run. That is, if we Start from the first element, we can traverse all the elements sequentially in a single pass</td>
+                    <td>It requires multiple runs. That is, if we start from the first element it might not be possible to traverse all the elements in a single pass</td>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td>The memoryutilization is not efficient</td>
+                    <td>Different structure utilize memory in different efficient ways and depending on the need</td>
+                </tr>
+                <tr>
+                    <td>5.</td>
+                    <td>The time complexity increase with the data size.</td>
+                    <td>Time complexity remains the same.</td>
+                </tr>
+                <tr>
+                    <td>Example:</td>
+                    <td>Arrays, Stacks, Queue, Linked Lists</td>
+                    <td>Tree, Graph, Map</td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+        <div id="what-algo">
+            <h1>What are Algorithms?</h1>
+            <p>Simply put, an algorithm is mentioning steps to solve a problem</p>
+            <h2>Problem: Find factorial of <var>n</var></h2>
+            <pre class="code" id="algo-example">
+                Initialize fact = 1
+                For every value v in range 1 to n:
+                    Multiply the fact by v
+                fact contains the factorial of n
+            </pre>
+            <p>Here, the algorithm is written in English. If it was written in a programming language, we would call it to code instead. Here is a code for finding the factorial of a number in C++.</p>
+            <pre>
+                int factorial(int n) {
+                    int fact = 1;
+                    for (int v = 1; v <= n; v++) {
+                        fact = fact * v;
+                    }
+                    return fact;
+                }
+            </pre>
+        </div>
+        <div id="stack-ds">
+            <h1>Stack</h1>
+            <p>Read More:</p><a href="https://www.programiz.com/dsa/stack">Stack Data Structure - Programiz</a> 
+            <p>A stack is a linear data structure that uses the LIFO (last in first out) principle. Which means whatever data was input last is going to be the first one to be removed.</p>
+
+            <p>> Example: think of a pile of plates, stored one on top of another. This is called a "Stack" of plates. The plate that was put on top is going to be the first one to get removed. To get the plate at the bootom, you need to remove ALL of the plates stored on top of it.</p> 
+                <h2>- LIFO Principle of Stack</h2>
+                <p>In programming terms, putting an item on top of the stack is called push and removing an item is called pop.</p>
+
+                <h2>- Basic Operations of Stack</h2>
+                <p>There are some basic operations that allow us to perform different actions on a stack.</p>
+
+                <ol>
+                    <li>Push: Add an element to the top of a stack</li>
+                    <li>Pop: Remove an element from the top of a stack</li>
+                    <li>IsEmpty: Check if the stack is empty</li>
+                    <li>IsFull: Check if the stack is full</li>
+                    <li>Peek: Get the value of the top element without removing</li>
+                </ol>
+                
+                <h2>- Working of Stack Data Structure</h2>
+                <p>The operations work as follows:
+                    <ol>
+                        <li>A pointer called TOP is used to keep track of the top element in the stack.</li>
+                        <li>When initializing the stack, we set its value to -1 so that we can check if the stack is empty by comparing <var>TOP == -1</var>.</li>
+                        <li>On pushing an element, we increase the value of TOP and place the new element in the position pointed to by TOP.</li>
+                        <li>On popping an element, we return the element pointed to by TOP and reduce its value.</li>
+                        <li>Before pushing, we check if the stack is already full</li>
+                        <li>Before popping, we check if the stack is already empty</li>
+                    </ol>
+                </p>
+                    <h2>- Working of Stack in Java</h2>
+                <pre>
+                // Stack implementation in Java
+
+                class Stack {
+                private int arr[];
+                private int top;
+                private int capacity;
+
+                // Creating a stack
+                Stack(int size) {
+                    arr = new int[size];
+                    capacity = size;
+                    top = -1;
+                }
+
+                // Add elements into stack
+                public void push(int x) {
+                    if (isFull()) {
+                    System.out.println("OverFlow\nProgram Terminated\n");
+                    System.exit(1);
+                    }
+
+                    System.out.println("Inserting " + x);
+                    arr[++top] = x;
+                }
+
+                // Remove element from stack
+                public int pop() {
+                    if (isEmpty()) {
+                    System.out.println("STACK EMPTY");
+                    System.exit(1);
+                    }
+                    return arr[top--];
+                }
+
+                // Utility function to return the size of the stack
+                public int size() {
+                    return top + 1;
+                }
+
+                // Check if the stack is empty
+                public Boolean isEmpty() {
+                    return top == -1;
+                }
+
+                // Check if the stack is full
+                public Boolean isFull() {
+                    return top == capacity - 1;
+                }
+
+                public void printStack() {
+                    for (int i = 0; i <= top; i++) {
+                    System.out.println(arr[i]);
+                    }
+                }
+
+                public static void main(String[] args) {
+                    Stack stack = new Stack(5);
+
+                    stack.push(1);
+                    stack.push(2);
+                    stack.push(3);
+                    stack.push(4);
+
+                    stack.pop();
+                    System.out.println("\nAfter popping out");
+
+                    stack.printStack();
+
+                    }
+                }
+                </pre>
+        </div>
+    </div>
+    <hr>
+</body>
+</html>

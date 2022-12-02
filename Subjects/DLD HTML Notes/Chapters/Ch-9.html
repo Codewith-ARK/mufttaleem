@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter - 9</title>
+</head>
+<body>
+    <a href="/Subjects/DLD HTML Notes/DLD.html">Go Back</a>
+    
+    <h1>Chapter - 9: Minimization Techniques/Methods</h1>
+
+    <p><strong>Following are the Minimization Techniques used in DLD</strong></p>
+    <ol>
+        <li>Boolean Algebra Techniques</li>
+        <li>Karnaugh's Map</li>
+        <li>Tabulation Method</li>
+    </ol>
+    
+    <ol>
+        <li><h2>Boolean Algebra Techniques</h2></li>
+        <ul>
+            <li>Minimization of Boolean Expression depends upon rules, laws and theorems and ability to apply them</li>
+            <li>It is a good method for minimization of simple expression</li>
+            <li>Major problem is when we have a very large and complete Boolean Expression used Boolean Algebra techniques</li>
+        </ul>
+        <li><h2>Karnaugh's Map <em>(K-Map)</em> Method</h2></li>
+        <ul>
+            <li>
+                <strong>What is K-Map?</strong>
+                <p>A k-map is a standard method for minimization of Boolean expression. If it is properly used then k-map provides minimized or simplified form of Boolean Expression.</p>
+            </li>
+            <li>
+                <strong>Structure of K-Map</strong>
+                <p>The structure of K-map is based on adjacent cells. A k-map contains 2n adjacent cells each representing 1 input combination in product form, where n is the number of variables.</p> 
+                <p>Two cells or minterms are said to be adjacent to each other if and only if they differ by single input variable. Example: A ̅B and AB are adjacent minterms which A ̅B and AB are not adjacent minterms</p>
+                <ol>
+                    <li>Structure of 2-Variable K-Map</li>
+                    <li>Structure of 3-Variable K-Map</li>
+                    <li>Structure of 4-Variable K-Map</li>
+                </ol>
+            </li>
+            <li>
+                <p><strong>How to minimize/simplify the boolean expression using K-Map?</strong></p>
+                <strong>Procedure:</strong>
+                <li>
+                    <em>Step 1:</em> Plotting Boolean expression in K-Map
+                    <p>Sum of minterms Boolean expression can be plotted in K-Map by placing 1 for each minterm. Similarly products of minterms Boolean expression can be plotted in k-map by placing 0 for each maxterms</p>
+                </li>
+                <li>
+                    <em>Step 2:</em> Making combinations
+                    <p>
+                        <ol>
+                            <li>Combination of (2) min-terms or max-terms is called a pair. Pair elements (1) variable</li>
+                            <li>Combination of (4) main terms or Max term is called a quad. A quad elements (2) variables</li>
+                            <li>Combination of (8) midterms or Max term is called octate. And octate elements (3) variables</li>
+                        </ol>
+                    </p>
+                </li>
+                <li>
+                    <em>Step 3:</em> Writting down the minimized form of Boolean expression from K-Map
+                </li>
+                <li>
+                    <em>Basic Rules:</em>
+                    <p>minimum numbers of combinations that will cover maximum number of minterms. From k-map you can obtain two types of Boolean expression</p>
+                    <ol>
+                        <li>
+                            <strong>Sum of Products (SOP) - Minterm</strong>
+                            <p>When we will make combination of 1’s then type of expression we will get from k-map is called <em><strong>Sum of Product</em></strong> in Boolean expression</p>
+                        </li>
+                        <li>
+                            <strong>Products of Sum (POS) - Maxterm</strong>
+                            <p>We will make combinations of 0’s then type of expression we will get from k-map is called product of sums Boolean expression</p>
+                        </li>
+                    </ol>
+                </li>
+            </li>
+        </ul>
+    </ol>
+    <h2>Difference between K-Map & Truth Table</h2>
+    <p>Both truth table and K-map describes the behavior of logic ckt or Boolean Expressions. The truth table contains all possible input combinations of their input variables with corresponding outputs in sequence form, while k-map also contains all possible input combinations of their input variable with corresponding outputs in adjacency form but the main advantage of k-map is that we can get minimized form of Boolean Expressions.</p>
+
+</body>
+</html>

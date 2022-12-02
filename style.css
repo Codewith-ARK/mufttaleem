@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    font-family: 'Comfortaa', cursive; /* Heading Fonts */
+    font-family: 'Montserrat', sans-serif; /* Link Fonts, text fonts */
+    
+    /* font-family: 'Kanit', sans-serif; */ /* Display (fancy) heading*/
+    /* font-family: 'Josefin Sans', sans-serif;} */
+}
+::selection {
+    background-color: #b800b8;
+    /* background: rgb(134, 28, 247); */
+    color: #ffffff;
+}
+
+    /* Header */
+    div#link-container{
+        height: fit-content;
+        width: 100%;
+        padding: 10px 0px;
+
+        text-align: center;
+        background-color: #ffffff;
+    }
+    #link-container a{
+        transition: 0.2s;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 22px;
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        font-weight: 600;
+        
+        margin: 0px;
+        padding: 10px;
+    }
+    #link-container a:hover{
+        padding: 10px 15px;
+        background-color: rgb(231, 133, 231);
+        transition: 0.2s;
+        color: #ffffff;
+    }
+    #link-container a.active{
+        padding: 10px;
+        background-color: #b800b8;
+        
+        color: #ffffff;
+    }
+    #main-page-img{
+        width: 100%;
+        height: 100vh;
+    }
+    u{
+        text-decoration: none;
+        background-image: linear-gradient(to right, #b800b8, #ff04de);
+    }
+    #main-slogan{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: fit-content;
+
+        padding: 10px;
+        color: rgb(0, 0, 0);
+        font-size: 24px;
+        font-weight: 600;    
+    }
+
+    /* Cards */
+    div#card-container{
+        width: 100vw;
+        height: fit-content;
+    }
+    /* Category Card Properties */
+    .card-img{
+        border-radius: 15px 15px 0px 0px;
+        width: 250px;
+        height: 170px;
+    }
+    .card{
+        display:inline-block;
+        width: 250px;
+        height: fit-content;
+        padding: 0px 0px 10px 0px;
+
+        top: 10px;
+        background-image: linear-gradient(to top, #b800b8, #490140);
+        margin: 6px 6px 6px 6px;
+        border-radius: 15px;
+    }
+    .card h2{
+        font-family: 'Montserrat', sans-serif;
+        color: #ffffff;
+        font-size: 22px;
+    }
+    .card p{
+        transition: 0.4s;
+        margin-top: 10px 0px;
+    }
+    .card:hover{
+        transition: 0.4s;
+        box-shadow: 5px 8px 10px rgb(0, 0, 0, 0.7); 
+    }
+    .card-content{
+        font-family: 'Comfortaa', cursive;
+        color: #ffffff;
+        width: 230px;
+        margin: 2px 12px 5px 12px;
+    }
