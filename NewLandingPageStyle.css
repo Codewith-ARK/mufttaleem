@@ -61,8 +61,22 @@ body {
     width: 250px;
     height: 350px;
     background-color: #e3e1e1;
+    border-radius: 8px;
 }
-.subject-container img{
+.subject-img {
     height: 60%;
     width: 100%;
+
+    border-radius: 8px 8px 0 0;
+}
+.subject-heading {
+    font-size: 22px;
+    word-wrap: break-word;
+    color: rgb(146, 144, 144);
+    font-family: 'Lato', sans-serif;
+}
+
+.subject-desc {
+    font-size: 16px;
+    font-family: Calibri, sans-serif;
 }
