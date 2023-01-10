@@ -15,16 +15,22 @@ body {
 
     box-shadow: 0 1px 1em rgba(0, 0, 0, 0.338);
     border-bottom: 1px solid rgba(170, 170, 170, 0.633);
+
+    /* FlexBox Settings */
+    display: flex;
+    justify-content: center;
+
 }
 #nav-bar img {
     height: 100%;
-    position: relative;
-    left: 50%;
+    /* position: relative; */
+    /* left: 50%; */
 }
 #main {
     width: 100vw;
-    height: 90vh;
+    height: 100vh;
     background-color: rgba(234, 232, 232, 0.412);
+    /* background-image: linear-gradient(#f78da7, #ffffff32); */
 }
 
 #slogan-text-box {
@@ -49,6 +55,11 @@ body {
     height: fit-content;
     
     background-color: #f3f3f3;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 #first-sem-heading {
@@ -60,8 +71,16 @@ body {
 .subject-container {
     width: 250px;
     height: 350px;
-    background-color: #e3e1e1;
+    margin: 10px 5px;
+
     border-radius: 8px;
+
+    background-color: #e3e1e1;
+    transition: 0.3s;
+}
+.subject-container:hover {
+    transform: translate(-1px, -px);
+    box-shadow: 0 1px 1em rgba(0, 0, 0, 0.338);
 }
 .subject-img {
     height: 60%;
