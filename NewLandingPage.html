@@ -7,16 +7,35 @@
     <title>Muft Taleem</title>
 
     <link rel="stylesheet" href="NewLandingPageStyle.css">
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
 </head>
 <body>
     <div id="nav-bar">
-        <img id="main-logo" src="img/sample.png" alt="logo of the website">
+        <span id="side-nav-button" onclick="openNav()">&#9776;</span>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+          </div>
+        <img id="main-logo" src="img/main-logo.png" alt="logo of the website">
     </div>
     <div id="main">
         <div id="slogan-text-box">
             <p id="slogan-text">A place for <span>Pakistani</span> Students to learn Computer Science</p>
         </div>
     </div>
+
+    <hr>
 
     <!-- First Semester Begin -->
     <div class="sem-container">
@@ -44,77 +63,79 @@
                 <p class="subject-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia, doloremque!</p>
             </div>
             <div class="subject-container">
-                <img src="img/prog-fun-img.jpg" alt="programming-fundamental-img" class="subject-img">
+                <img src="img/english-communication.jpg" alt="programming-fundamental-img" class="subject-img">
                 <p class="subject-heading">English Communication</p>
                 <p class="subject-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia, doloremque!</p>
             </div>
         </div>
     </div>
     <!-- First Semester ENDS -->
-
+    
     <hr>
-
+    
     <!-- Second Semester Begin -->
     <div class="sem-container">
         <p class="sem-heading" id="first-sem-heading">2nd Semester</p>
 
         <div class="all-subjects">
             <div class="subject-container">
-                <img src="img/prog-fun-img.jpg" alt="programming-fundamental-img" class="subject-img">
+                <img src="img/applied-physics.jpg" alt="applied-physics-img" class="subject-img">
                 <p class="subject-heading">Applied Physics</p>
                 <p class="subject-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia, doloremque!</p>
             </div>
             <div class="subject-container">
-                <img src="img/ict-img.jpg" alt="programming-fundamental-img" class="subject-img">
+                <img src="img/basic-electronics.jpg" alt="image of basic electronics" class="subject-img">
                 <p class="subject-heading">Basic Electronics</p>
                 <p class="subject-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia, doloremque!</p>
             </div>
             <div class="subject-container">
-                <img src="img/pak-study-img.png" alt="programming-fundamental-img" class="subject-img">
+                <img src="img/linear-algebra.webp" alt="image for linear algebra" class="subject-img">
                 <p class="subject-heading">Linear Algebra</p>
                 <p class="subject-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia, doloremque!</p>
             </div>
             <div class="subject-container">
-                <img src="img/isl-img.jpg" alt="programming-fundamental-img" class="subject-img">
+                <img src="img/object-oriented-programming.webp" alt="object oriented programming" class="subject-img">
                 <p class="subject-heading">Object Oriented Programming</p>
                 <p class="subject-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia, doloremque!</p>
             </div>
             <div class="subject-container">
-                <img src="img/prog-fun-img.jpg" alt="programming-fundamental-img" class="subject-img">
+                <img src="img/technical-business-writting.jpg" alt="technical and business writting" class="subject-img">
                 <p class="subject-heading">Technical & Business Writting</p>
                 <p class="subject-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia, doloremque!</p>
             </div>
         </div>
     </div>
     <!-- Second Semester ENDS -->
-
+    
+    <hr>
+    
     <!-- Third Semester Begin -->
     <div class="sem-container">
         <p class="sem-heading" id="first-sem-heading">3rd Semester</p>
 
         <div class="all-subjects">
             <div class="subject-container">
-                <img src="img/prog-fun-img.jpg" alt="programming-fundamental-img" class="subject-img">
+                <img src="img/data-structures.jpg" alt="data structures and algorithms" class="subject-img">
                 <p class="subject-heading">Data Structure & Algorithms</p>
                 <p class="subject-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia, doloremque!</p>
             </div>
             <div class="subject-container">
-                <img src="img/ict-img.jpg" alt="programming-fundamental-img" class="subject-img">
+                <img src="img/digital-logic-design.webp" alt="digital logic and design" class="subject-img">
                 <p class="subject-heading">Digital Logic & Design</p>
                 <p class="subject-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia, doloremque!</p>
             </div>
             <div class="subject-container">
-                <img src="img/pak-study-img.png" alt="programming-fundamental-img" class="subject-img">
+                <img src="img/computer-organization.jpg" alt="computer organization and assembly language" class="subject-img">
                 <p class="subject-heading">Computer Organization</p>
                 <p class="subject-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia, doloremque!</p>
             </div>
             <div class="subject-container">
-                <img src="img/isl-img.jpg" alt="programming-fundamental-img" class="subject-img">
+                <img src="img/discrete-maths.jpg" alt="discrete maths" class="subject-img">
                 <p class="subject-heading">Discrete Structures</p>
                 <p class="subject-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia, doloremque!</p>
             </div>
             <div class="subject-container">
-                <img src="img/prog-fun-img.jpg" alt="programming-fundamental-img" class="subject-img">
+                <img src="img/prof-ethics.webp" alt="Proffesional ethics" class="subject-img">
                 <p class="subject-heading">Proffesional Ethics</p>
                 <p class="subject-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia, doloremque!</p>
             </div>
